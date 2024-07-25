@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #181818;
+    text-align: center;
+    padding: 1%;
+    height: 5vh;
+}
+
+.header p{
+   color: #ffff; 
+   font-size: 1.2rem;
+   font-weight: 900;
+}
+
+.header span{
+    font-size: 50%;
+}

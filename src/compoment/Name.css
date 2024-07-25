@@ -1,0 +1,32 @@
+.banner {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #f7a92c, #ffffff 25%, #ffffff 75%, #00bfff);
+    padding:1% 2%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    height: 5vh;
+}
+
+.line {
+    flex: 1;
+    height: 3px;
+}
+
+.left-line {
+    background-color: #f7a92c;
+}
+
+.right-line {
+    background-color: #00bfff;
+}
+
+.text {
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 0 20px;
+}

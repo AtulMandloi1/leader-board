@@ -1,0 +1,17 @@
+.score-box{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+    width: 100%;
+}
+
+.score-name{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    width: 70%;
+    background: #08080a;
+    color: yellow;
+}

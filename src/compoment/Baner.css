@@ -1,0 +1,101 @@
+.banerContainer {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  /* height: 200px; Adjust height as needed */
+  overflow: hidden; /* Ensures no overflow from transition effects */
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden; /* Hide overflow from sliding images */
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Fade transition */
+}
+
+.imageWrapper img.active {
+  opacity: 1;
+}
+
+.imageWrapper img.slide-left-enter {
+  animation: slideLeftEnter 0.5s forwards;
+}
+
+.imageWrapper img.slide-left-exit {
+  animation: slideLeftExit 0.5s forwards;
+}
+
+.imageWrapper img.slide-right-enter {
+  animation: slideRightEnter 0.5s forwards;
+}
+
+.imageWrapper img.slide-right-exit {
+  animation: slideRightExit 0.5s forwards;
+}
+
+@keyframes slideLeftEnter {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideLeftExit {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes slideRightEnter {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideRightExit {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(100%);
+  }
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white; /* White text */
+  border: none;
+  font-size: 2rem; /* Bold text */
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  cursor: pointer;
+}
+
+.left {
+  left: 10px; /* Adjust positioning as needed */
+}
+
+.right {
+  right: 10px; /* Adjust positioning as needed */
+}
